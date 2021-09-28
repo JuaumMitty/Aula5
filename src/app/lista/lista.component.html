@@ -1,0 +1,21 @@
+<p>Componente lista</p>
+<hr>
+<table class="table table-striped table-bordered table-condensed table-hover">
+    <thead>
+    <tr class="success">
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Ação</th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody >
+        <tr  *ngFor="let al of listaal$ | async" >
+        <td> {{al.name}} </td>
+        <td> {{al.email}} </td>
+        <td>  <button class="btn btn-success" >Alterar </button></td>
+        <td> <button class="btn btn-danger" >Excluir </button></td>
+        </tr>
+    </tbody>
+  </table>
